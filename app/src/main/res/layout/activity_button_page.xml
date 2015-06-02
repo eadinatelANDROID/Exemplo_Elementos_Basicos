@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical" >
+
+  <Button
+    android:id="@+id/btnAlertMessage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:background="#ff0000"
+    android:text="EXIBIR DIALOGO DE ALERTA"
+    android:layout_marginTop="15dp"
+    android:textColor="#fff" />
+
+ <Button
+    android:id="@+id/btnToastMessage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:background="#37a8f7"
+    android:text="EXIBIR TOAST MESSAGE"
+    android:layout_marginTop="15dp"
+    android:textColor="#fff" />
+ 
+ 
+  <Button
+    android:id="@+id/btnLogMessage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:background="#E29213"
+    android:text="LOG NA JANELA OUTPUT"
+    android:layout_marginTop="15dp"
+    android:textColor="#fff" />
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rafaelliberato.exemploelembasicos.exemploead_elembasico_layouts.RelativeLayout" >
+
+    
+    
+ <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="Layout Relativo, faz com que os elementos tenham dependÃªncias de outros para se posicionarem, ou seja, a posiÃ§Ã£o de um objeto terÃ¡ relaÃ§Ã£o com a posiÃ§Ã£o de outros objetos. Esta relaÃ§Ã£o Ã© feita atravÃ©s dos ID's." />
+    
+    
+    
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="#333333"
+        android:gravity="top" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RELATIVE LAYOUT"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnCentro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#FFF"
+            android:height="50dp"
+            android:text="CENTER"
+            android:width="75dp" />
+
+        <Button
+            android:id="@+id/btnEsquerda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnCentro"
+            android:layout_toLeftOf="@+id/btnCentro"
+            android:background="#C9F559"
+            android:height="50dp"
+            android:text="LEFT"
+            android:width="75dp" />
+
+        <Button
+            android:id="@+id/btnTopo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnCentro"
+            android:layout_alignLeft="@+id/btnCentro"
+            android:background="#C9F559"
+            android:height="50dp"
+            android:text="TOP"
+            android:width="75dp" />
+
+        <Button
+            android:id="@+id/btnDireita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnTopo"
+            android:layout_toRightOf="@+id/btnCentro"
+            android:background="#C9F559"
+            android:height="50dp"
+            android:text="RIGHT"
+            android:width="75dp" />
+
+        <Button
+            android:id="@+id/btnAbaixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCentro"
+            android:layout_toLeftOf="@+id/btnDireita"
+            android:background="#C9F559"
+            android:height="50dp"
+            android:text="BELOW"
+            android:width="75dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
